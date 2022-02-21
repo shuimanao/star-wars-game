@@ -9,8 +9,8 @@ export const renderChosenPlayers = (
   <Grid container spacing={2}>
     {chosenItems &&
       chosenItems.map((item) => (
-        <Grid item xs={6}>
-          <Card key={item.name}>
+        <Grid item xs={6} key={item.name}>
+          <Card>
             <CardContent>
               <strong>{item.name}</strong>
               {resource === 'people' ? (

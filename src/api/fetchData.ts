@@ -13,7 +13,7 @@ const fetchDefault = async (
 
 export const getPeople = async (): Promise<SwapiResponse | undefined> => {
   try {
-    const response = await fetchDefault('https://swapi.py4e.com/api/people/');
+    const response = await fetchDefault('https://swapi.dev/api/people/');
     return response.json();
   } catch (e) {
     console.error(e);
@@ -22,9 +22,7 @@ export const getPeople = async (): Promise<SwapiResponse | undefined> => {
 
 export const getStarships = async (): Promise<SwapiResponse | undefined> => {
   try {
-    const response = await fetchDefault(
-      'https://swapi.py4e.com/api/starships/'
-    );
+    const response = await fetchDefault('https://swapi.dev/api/starships/');
     return response.json();
   } catch (e) {
     console.error(e);
